@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Char Dham Yatra Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Char Dham Yatra Booking</h2>
+    <form id="bookingForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required />
+
+      <label for="location">Select Dham:</label>
+      <select id="location" required>
+        <option value="">-- Choose a Dham --</option>
+        <option value="Yamunotri">Yamunotri</option>
+        <option value="Gangotri">Gangotri</option>
+        <option value="Kedarnath">Kedarnath</option>
+        <option value="Badrinath">Badrinath</option>
+        <option value="All Four">All Four (Complete Yatra)</option>
+      </select>
+
+      <label for="travelDate">Travel Date:</label>
+      <input type="date" id="travelDate" required />
+
+      <label for="noOfPersons">Number of Pilgrims:</label>
+      <input type="number" id="noOfPersons" min="1" max="50" required />
+
+      <label for="travelMode">Travel Mode:</label>
+      <select id="travelMode" required>
+        <option value="">-- Select Mode --</option>
+        <option value="Bus">Bus</option>
+        <option value="Helicopter">Helicopter</option>
+        <option value="Private Car">Private Car</option>
+      </select>
+
+      <p id="priceDisplay" class="hidden">
+        <strong>Total Price:</strong> ₹<span id="totalPrice"></span>
+      </p>
+
+       <div class="button-group">
+        <button type="submit">Book Now</button>
+        <button type="button" id="cancelBtn">Cancel Booking</button>
+      </div>
+    </form>
+
+    <div id="confirmation" class="hidden"></div>
+    <a href="bookings.html" class="nav-link">View All Bookings</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

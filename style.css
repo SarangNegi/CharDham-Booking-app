@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgb(100, 98, 98);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(240, 234, 234, 0.1);
+  width: 95%;
+  max-width: 500px;
+  opacity: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1b55ea;
+}
+
+form label {
+  margin-top: 12px;
+  display: block;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#confirmation {
+  background: #d4edda;
+  color: #155724;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: blink;
+  color: #0d68c4;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://miro.medium.com/v2/resize:fit:1358/1*RCD5dqpR70mDjtdOWguoVQ.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  color: white;
+}
+
+/* Optional: Add semi-transparent form background for readability */
+form, .confirmation, .booking-card {
+  background-color: rgba(0, 0, 0, 0.6); /* transparent black */
+  padding: 20px;
+  border-radius: 10px;
+}
+input, select {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+
